@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.php">
+    <title>Adoptions</title>
+    <style>
+        body {
+            background-color: #beddac;
+            background-image: url('stray-cat-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        .stray-cats-text {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            letter-spacing: 2px;
+            transition: transform 0.3s ease;
+        }
+
+        .stray-cats-text:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            margin: 0.3rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            margin: 0.3rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .navbar{
+            background-color: #233119;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff;
+            background: rgba(87, 176, 67, 1);
+            transform: translateY(-3px);
+        }
+
+        .navbar-toggler-icon {
+            background-color: #D3B49F;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-img-top {
+            height: 200px; /* Adjusted height */
+            width: 100%; /* Ensure the image spans the card width */
+            object-fit: cover; /* Maintain aspect ratio and fill the container */
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #295c17;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        footer {
+            background-color: #233119;
+            color: #fff;
+            padding-top: 12px;
+            text-align: center;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px; /* Optional: Set a consistent height */
+        }
+
+        footer a {
+            color: #87c17d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #b8f3b8;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .card-title {
+                font-size: 1.2rem;
+            }
+
+            .card-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class="stray-cats-text">Cat Chers Incorporation</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Adopt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="foster.html">Foster</a></li>
+                        <li class="nav-item"><a class="nav-link" href="involve.html">Get Involve</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="model-gallery" class="py-5" style="margin-top: 56px;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; color: #fff; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); background: linear-gradient(to right, #7c9c68, #4e6b3a); padding: 15px; border-radius: 10px; text-align: center;">
+                Furry Souls Ready for Comfy Homes
+            </h1>
+            <div class="row">
+                <!-- Fluffy -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Fluffy.jpg" class="card-img-top" alt="Fluffy">
+                        <div class="card-body">
+                            <h5 class="card-title">Fluffy - 10 Month Old</h5>
+                            <p class="card-text">A playful and loving cat, great for families or individuals.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Whiskers -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Whiskers.jpeg" class="card-img-top" alt="Whiskers">
+                        <div class="card-body">
+                            <h5 class="card-title">Whiskers - 6 Months Old</h5>
+                            <p class="card-text">Curious and adventurous, loves exploring and cuddling.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Luna -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Luna.jpg" class="card-img-top" alt="Luna">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna - 5 Months Old</h5>
+                            <p class="card-text">Gentle and calm, perfect for a quiet home environment.</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Shadow -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Shadow.jpg" class="card-img-top" alt="Shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Shadow - 6 Months Old</h5>
+                            <p class="card-text">Loyal and affectionate, enjoys lounging and companionship.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Ginger -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Ginger.jpg" class="card-img-top" alt="Ginger">
+                        <div class="card-body">
+                            <h5 class="card-title">Ginger - 5 Months Old</h5>
+                            <p class="card-text">Energetic and lively, loves playing with toys and chasing laser lights.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bella -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Bella.jpg" class="card-img-top" alt="Bella">
+                        <div class="card-body">
+                            <h5 class="card-title">Bella - 5 Months Old</h5>
+                            <p class="card-text">Sweet and shy, warms up quickly and loves gentle pets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cat Chers Inc. | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

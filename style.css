@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-size: 70%;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.navbar {
+    background-color: #014904;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.left {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+}
+
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4d4d4 !important;
+}
+
+.stray-cat-text {
+    font-family: 'Times New Roman';
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    padding-left: 1px;
+}
+
+#first-layer h1 {
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    justify-content: left
+}
+
+#first-layer p {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    justify-content: left
+}
+
+/* Ensure the video and text are centered and responsive */
+#second-layer {
+    background-color: rgb(237, 255, 240); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+.row {
+    width: 100%;
+}
+
+.col-lg-6, .col-md-8, .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.video {
+    max-width: 100%; /* Ensure the video is responsive */
+    height: 100vh; /* Full screen height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-right: 20px; /* Space between the video and the text */
+}
+
+.text-container {
+    padding: 20px;
+    flex: 1; /* Make the text container take up the remaining space */
+    max-height: 100vh; /* Ensure text container doesn't exceed the video height */
+    overflow-y: auto; /* Allow scrolling if the text exceeds the available space */
+    text-align: left;
+}
+
+#second-layer p {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    justify-content: right
+}
+
+#second-layer {
+    background-color: rgb(237, 255, 240); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-lg-6, .col-md-8, .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    max-width: 100%; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.text-container {
+    padding: 20px; 
+    flex: 1; 
+    text-align: left;
+}
+
+.card {
+    overflow: hidden; 
+}
+.card{
+    transition: transform 0.2s ease;
+    size: 100px;
+}
+
+.card:focus{
+    transform: scale(2,3);
+    z-index: 5;
+    zoom: 15;
+    outline: none;
+}
+
+.design{
+    transition: transform 0.2s ease;
+    size: 50px;
+    align-items: flex-end;
+
+}
+
+.model-gallery{
+    margin-bottom: 50px;
+}
+
+
